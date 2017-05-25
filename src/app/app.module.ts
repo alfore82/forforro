@@ -14,8 +14,11 @@ import { TextareaComponent } from './shared/textarea/textarea.component';
 import { TablerowComponent } from './shared/tablerow/tablerow.component';
 import { PictureComponent } from './shared/picture/picture.component'
 import { AuthService } from "app/shared/auth.service";
-import { AppSettings } from "app/shared/firebase.app.data";
 import { UserService } from "app/shared/user.service";
+import { environment } from "environments/environment";
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 @NgModule({
   declarations: [
@@ -35,9 +38,11 @@ import { UserService } from "app/shared/user.service";
     ReactiveFormsModule,
     HttpModule,
     ROUTING,
-    
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
-  providers: [AuthService, AppSettings, UserService],
+  providers: [AuthService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

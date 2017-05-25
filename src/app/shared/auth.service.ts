@@ -1,22 +1,28 @@
 import { UserCredentials } from "app/shared/objects/user.credentials";
-import * as firebase from "firebase";
 import { Router } from "@angular/router";
 import { Subject } from "rxjs";
 import { Injectable } from "@angular/core";
-import { AppSettings } from "app/shared/firebase.app.data";
+import { AngularFireAuth } from "angularfire2/auth";
+import { Observable } from "rxjs/Observable";
+import * as firebase from 'firebase/app';
+
+
 
 
 
 @Injectable()
 export class AuthService {
 
-    constructor(private router:Router){
-        firebase.initializeApp(AppSettings.configFirebase);
-        
+    user: Observable<firebase.User>
+
+    constructor(private router:Router, private afAuth:AngularFireAuth){
+        this.user = afAuth.authState;
 
     }
 
     signupUser(userCredentials: UserCredentials, callback: any){
+        
+
         return firebase.auth().createUserWithEmailAndPassword(
             userCredentials.email, userCredentials.password).then(()=>callback()).catch(function(error){
                 console.log(error);
@@ -24,25 +30,22 @@ export class AuthService {
     }
 
     signinUser(userCredentials: UserCredentials){
-        firebase.auth().signInWithEmailAndPassword(userCredentials.email,
-            userCredentials.password).then(()=>{
-                console.log(firebase.auth().currentUser.uid);
-            }).catch(function(error){
-                console.log(error);
-            });
+        return this.afAuth.auth.signInWithEmailAndPassword(userCredentials.email,
+            userCredentials.password);
     }
 
     signoutUser(){
-        firebase.auth().signOut();
         this.router['/'];
+        this.afAuth.auth.signOut();
     }
 
     isAuthenticated() {
         const state = new Subject<boolean>();
-        firebase.auth().onAuthStateChanged(function(user){
+        this.user.subscribe(user=>{
             if (user){
                 state.next(true);
-            } else {
+            }
+            else {
                 state.next(false);
             }
         });
