@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "forforroapp",
+  "private_key_id": "7ec18a192fcc8ae136ab542f939eb69f96916058",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCyKIwSgCLBs3IC\nmZhqD5bQY10QNRb/C61V3EmcxTyG4QJrVNlAQ10gXnxPzZ83fsASlVLQ3Unrn22g\nqGypu1OQhvfxcuewx9i3X8G8sPnOzBqUVJ1wkHzUMomuBjAYdl1XcuwjicQgr3TA\nhQAOuN/7zqOrzwtu52SqOO5AbyCSI5sUCSRZRzmfGDm8GFbtQcYiBnPfKwJaKb3a\ndaY8mi8VthRPZhwPAQ20AtXMTwdm5kbmmRUmeWaBIi7GmaPxRWAN0FeMwcfJOJ2N\nkn33IvSm8WHSvwfdS8OvNudM66PqL5wjBgkXd2WcE4D9XAJSsCnl+BNj3XpSB+g0\nvaFPqXnVAgMBAAECggEAElMzXS/K42umvXe5AqfJ1nNx/hnH3MIBuUQoWjS7bhA0\n5H9cvUxwhsTROpAm4VlrPj4Xv54TXWYPq6fHTYoUJViMpkwwYrGbq/jwf40glNHP\nphQyAYMLI/RyzvCZ/9ok7brHaTxhbQ8/DhJgGCOR/l+Z3DE2tticNRoX/46upflR\nn3K4PiFRE691xUCjohyUe3eQs8/LUUscwGvq5w9CB5rGQq9Qg/aEpvVyBx1ACMg5\nDA9LT3Kboj3gYKf8JsLyfItiMR6UcEiSzv88ecDedzClyYoLV7VEc9k2ZlnmdWe0\nWebJ1Vi8Q/rmOmTCU6aKdYX7Y7Nc6yO+npa3XiA6YQKBgQDfGZ34vTJd2hfnisKc\nXq77zCZQrbUNQfLIApS6rDHRVksrAhMayj3ALK+oS3HMsPNX72U+u8ItDu+1dmAH\nPYZ3XBt7Z6RFsmavR+N2pX5zJNy7jQsmlwdhFJsd6tkAnP3PzpbmfnrHcl5lj6sO\nyPXgvpy/8DA51iYs+IpS19/6jQKBgQDMbk9iHJxjktoPtOh5eX0B2vtIxpNsHBwl\nrGhyOtcj897lmdM+g6abcDtAxjLmGQUhdrb+mxnYsADtziQ9FjcYaXrhNvkRRBZv\n3VKJp6V8JrRq8h9lZ4LtLQ8S9dQFksLqdc9qcbKKT94dKg4xxBpJTZ7QSvms2ZUu\nBpCUH3gOaQKBgAcbodTS8k/bKvfNi/W/boPHNVFMt3/8oeeNbX+lDNFGlo6AOmuY\nFe+RfOc3wCBtYtNiZS9ifAVDfI+jfdu9MhOLc7Sy0KEH1g2vlKerDiRNAFtZWwmX\ntjx5k5eYa+GBHvUH9/bQAMlp82f489I8xNisOgJDfMXa9Mxp/r408oXhAoGAEn6U\nTfL6rwN1GOCr+3ljNszB2QamBazRWxMq69Ko7ga9DpaJBunQI9XWdni32BtBXJKp\n4YTUpMbffqQcoS4mU94PENrxU3+ObBZgxjVVglLaFabL8leX/68I4xU8Vji9y4pW\n9nFMzriFBqxsVlJAcotEJ+HwjpOsrFpJsCzcpqkCgYAqWt+0VMSV1HLpEIJ6pzE6\n6/IdEo1E6LlD69w7atnvbwPtTHBLO4oIh7PlFM4oVDkfqYKmCCn6vQkfhToH5TAm\nVBw0n2mkD1y/R2AgvnDjoL8fjgWHRR0jGK9juvz2qvG8R9pTwCth5iloteqyA7Rs\nM7KSii5rU16pk7y+aQCtDw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "forforroapp@appspot.gserviceaccount.com",
+  "client_id": "102412094352796572158",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/forforroapp%40appspot.gserviceaccount.com"
+}

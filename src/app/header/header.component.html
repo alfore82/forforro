@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button 
+          type="button" 
+          class="navbar-toggle " [ngClass]="{'collapsed': isCollapsed}"
+          (click)="onClickToggleButton()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand" >
+          <p id="logo"><a [routerLink]="['/']">forforró</a></p>
+          <p id="subtitle"><a [routerLink]="['/']">por amor ao forró</a></p>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" [ngClass]="{'in': isIn}">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" [ngClass]="{'open': isOpenEvents}" (click)="onClickEvents()" (mouseleave)="closeEvents()">
+          <a class="dropdown-toggle"  role="button" >Events <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">communities</a></li>
+            <li><a href="#">teachers</a></li>
+            <li><a href="#">bands</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" [ngClass]="{'open': isOpenPeople}" (click)="onClickPeople()" (mouseleave)="closePeople()">
+          <a class="dropdown-toggle"  role="button" >People <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Parties</a></li>
+            <li><a href="#">Festivals</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Regular classes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" [ngClass]="{'open': isOpenLogin}" (click)="onClickLogin()" (mouseleave)="closeLogin()">
+          <a class="dropdown-toggle"  role="button">Login <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li *ngIf ="!isAuthenticated"><a [routerLink]="['/login']"  >Login</a></li>
+            <li *ngIf ="!isAuthenticated"><a [routerLink]="['/signup']">Sign up</a></li>
+            <li *ngIf ="isAuthenticated"><a [routerLink]="['/user']">My account</a></li>
+            <li *ngIf ="isAuthenticated"role="separator" class="divider"></li>
+            <li *ngIf ="isAuthenticated"><a href="#" (click)="onLogout()">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "app-profile": {},
+        "router-outlet": {},
+        "app-header": {}
+    },
+    "attributes": {
+        "[ngclass]": {}
+    }
+}

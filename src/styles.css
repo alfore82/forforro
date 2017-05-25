@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400');
+
+#logo {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Assistant, sans-serif;
+    color: #080e44;
+}
+
+#logo a:hover {
+    text-decoration: none;
+}
+
+#subtitle{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Assistant, sans-serif;
+    color: #080e44;
+}
+
+#subtitle a:hover{
+    text-decoration: none;
+}
+
+h3 {
+    font-family: Assistant, sans-serif;
+    font-size: 32px;
+    font-weight: 300 !important;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-family: Assistant, sans-serif;
+    font-size: 24px;
+    font-weight: 300 !important;
+}
+
+h5 {
+    font-family: Assistant, sans-serif;
+    font-size: 20px;
+    font-weight: 300 !important;
+}
+
+label {
+    font-weight: normal !important;
+}
+
+img {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    max-width: 200px;
+    
+    height: auto;
+    
+}
+
+.align-right{
+    text-align: right
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
