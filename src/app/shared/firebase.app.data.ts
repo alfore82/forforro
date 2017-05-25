@@ -10,6 +10,5 @@ export class AppSettings{
 
     static databaseURL = "https://forforroapp.firebaseio.com/"; 
 
-    googleCred: GoogleCredential = GoogleCredential.fromStream()
 
 }
