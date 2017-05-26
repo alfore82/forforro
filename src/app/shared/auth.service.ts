@@ -29,9 +29,9 @@ export class AuthService {
             });
     }
 
-    signinUser(userCredentials: UserCredentials){
+    signinUser(userCredentials: UserCredentials, callback: any){
         return this.afAuth.auth.signInWithEmailAndPassword(userCredentials.email,
-            userCredentials.password);
+            userCredentials.password).then(()=>callback()).catch((error)=>console.log(error));
     }
 
     signoutUser(){

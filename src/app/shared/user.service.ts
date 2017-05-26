@@ -1,8 +1,8 @@
 import { Injectable } from "@angular/core";
 import { Http, Headers } from "@angular/http";
 import { AuthService } from "app/shared/auth.service";
-import { AngularFireDatabase, FirebaseObjectObservable } from "angularfire2/database";
-import { UserProfileWrapper } from "app/shared/objects/user.profile.wrapper";
+import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database";
+import { UserProfile } from "app/shared/objects/user.profile";
 
 
 
@@ -10,18 +10,28 @@ import { UserProfileWrapper } from "app/shared/objects/user.profile.wrapper";
 @Injectable()
 export class UserService {
     
-    user: FirebaseObjectObservable<any>
+    userList: FirebaseListObservable<any>
     constructor(db: AngularFireDatabase) {
-        this.user = db.object('/userdetails');
+        this.userList = db.list('/userdetails');
      }
 
-    storeData(userProfile: any){
+    storeData(userProfile: UserProfile){
         console.log(userProfile);
-        this.user.set(userProfile).then(()=>console.log('set'));
+        this.userList.push(userProfile).then(()=>console.log('added'));
        
     }
 
-    fetchData(){
+    fetchData(uid: string){
 
+        return this.userList.map((userProfiles)=>{
+            const filtered = userProfiles.filter((userProfile)=>{
+                if (userProfile.uid === uid) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            return filtered;
+        })
     }
 }

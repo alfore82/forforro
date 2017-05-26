@@ -4,7 +4,6 @@ import { FormGroup, FormControl, Validators, AbstractControl } from "@angular/fo
 import { UserCredentials } from "app/shared/objects/user.credentials";
 import { UserService } from "app/shared/user.service";
 import { UserProfile } from "app/shared/objects/user.profile";
-import { UserProfileWrapper } from "app/shared/objects/user.profile.wrapper";
 
 @Component({
   selector: 'app-signin',
@@ -41,9 +40,8 @@ export class SigninComponent implements OnInit {
       userProfile.name =this.signupForm.get('name').value;
       userProfile.surname =this.signupForm.get('surname').value;
       userProfile.username =this.signupForm.get('username').value;
-      var store = new UserProfileWrapper(this.authService.getUserId(), userProfile).toJSONObject();
-      console.log(store);
-      this.userSerice.storeData(store);
+      userProfile.uid = this.authService.getUserId();
+      this.userSerice.storeData(userProfile);
     });
     
     
