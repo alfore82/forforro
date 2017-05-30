@@ -1,3 +1,12 @@
-<p>
-  home-component works!
-</p>
+
+  <div class="row">
+      
+      <div class="col-sm-3">
+        <app-basic-navigation></app-basic-navigation>
+      </div>
+      <div class="col-sm-9" >
+        <app-list-item-party *ngFor="let partyInfo of partyInfos" [partyInfo]="partyInfo"></app-list-item-party>
+        
+        
+  </div>
+

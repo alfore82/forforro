@@ -5,7 +5,15 @@
     font-size: 40px;
     font-weight: 300;
     font-family: Assistant, sans-serif;
-    color: #080e44;
+    color:#00173d;
+}
+
+#logo a {
+    color:#00173d;
+}
+
+#logo a:visited {
+    color:#00173d;
 }
 
 #logo a:hover {
@@ -16,7 +24,15 @@
     font-size: 15px;
     font-weight: 300;
     font-family: Assistant, sans-serif;
-    color: #080e44;
+    color: #00173d;
+}
+
+#subtitle a{
+    color: #00173d;
+}
+
+#subtitle a:visited{
+    color: #00173d;
 }
 
 #subtitle a:hover{
@@ -67,4 +83,9 @@ img {
 
 .dropdown-menu {
     border-radius: 0;
+}
+
+body{
+    background-color: #e6e8ed;
+    color: #444444;
 }

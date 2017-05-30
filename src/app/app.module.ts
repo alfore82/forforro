@@ -19,6 +19,8 @@ import { environment } from "environments/environment";
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { ListItemPartyComponent } from "app/listitem/list.item.party.component";
+import { BasicNavigationComponent } from './basic-navigation/basic-navigation.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     HomeComponent,
     TextareaComponent,
     TablerowComponent,
-    PictureComponent
+    PictureComponent,
+    ListItemPartyComponent,
+    BasicNavigationComponent
   ],
   imports: [
     BrowserModule,

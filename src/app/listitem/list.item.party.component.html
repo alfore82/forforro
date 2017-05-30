@@ -1,0 +1,19 @@
+<div class="list-item-container">
+      <div class="list-item-container-left-col">
+          <div class="list-item-container-left-col-image" [ngStyle]="{'background-image': 'url('+partyInfo.imageURL+')'}"></div>
+          <div class="list-item-container-left-col-footer">Price: {{partyInfo.price}} {{partyInfo.currency}}</div>
+      </div>
+      <div>
+        <div class="list-item-container-right-col-element date" ><p>{{partyInfo.startDate | date:'EEE d.M.y - H:mm'}} - {{partyInfo.endDate | date:'EEE d.M.y - H:mm'}}<p></div>
+        <div class="list-item-container-right-col-element heading" ><h5 style="margin: 0px;">{{partyInfo.title}}</h5></div>
+        <div class="list-item-container-right-col-element description"><p>{{partyInfo.description}}</p></div>
+        <div class="list-item-container-right-col-element organizer"><p><span class="glyphicon glyphicon-user"></span> {{partyInfo.organiser}}</p></div>
+        <div class="list-item-container-right-col-element footer" >
+          
+          <div class="footer-left"><span class="glyphicon glyphicon-map-marker"></span> {{partyInfo.location}}</div>
+          <div class="footer-right">
+              <span class="glyphicon glyphicon-option-horizontal" style="text-align:right"></span>
+          </div>
+        </div>
+      </div>
+</div>
