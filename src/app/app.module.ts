@@ -21,6 +21,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { ListItemPartyComponent } from "app/listitem/list.item.party.component";
 import { BasicNavigationComponent } from './basic-navigation/basic-navigation.component';
+import { UserSiteComponent } from './user-site/user-site.component';
+import { UserSiteTitleComponent } from './user-site-title/user-site-title.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { BasicNavigationComponent } from './basic-navigation/basic-navigation.co
     TablerowComponent,
     PictureComponent,
     ListItemPartyComponent,
-    BasicNavigationComponent
+    BasicNavigationComponent,
+    UserSiteComponent,
+    UserSiteTitleComponent
   ],
   imports: [
     BrowserModule,

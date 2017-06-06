@@ -1,0 +1,79 @@
+<app-user-site-title></app-user-site-title>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button 
+          type="button" 
+          class="navbar-toggle " [ngClass]="{'collapsed': isCollapsed}"
+          (click)="onClickToggleButton()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" [ngClass]="{'in': isIn}">
+      <ul class="nav navbar-nav">
+        <li class="dropdown" [ngClass]="{'open': isOpenEvents}" (click)="onClickEvents()" (mouseleave)="closeEvents()">
+          <a class="button"  role="button" >Home </a>
+        </li>
+        <li class="dropdown" [ngClass]="{'open': isOpenPeople}" (click)="onClickPeople()" (mouseleave)="closePeople()">
+          <a class="dropdown-toggle"  role="button" >Classes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Regular Classes</a></li>
+            <li><a href="#">Workshops</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" [ngClass]="{'open': isOpenLogin}" (click)="onClickLogin()" (mouseleave)="closeLogin()">
+          <a class="dropdown-toggle"  role="button">Events <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li ><a  >Party</a></li>
+            <li ><a >Festivals</a></li>
+        
+          </ul>
+        </li>
+         <li class="dropdown" [ngClass]="{'open': isOpenTeachers}" (click)="onClickTeachers()" (mouseleave)="closeTeachers()">
+          <a class="dropdown-toggle"  role="button">Teachers <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li ><a  >Alex</a></li>
+            <li ><a >Sophia</a></li>
+         
+          </ul>
+          <li class="dropdown" [ngClass]="{'open': isOpenMedia}" (click)="onClickMedia()" (mouseleave)="closeMedia()">
+          <a class="dropdown-toggle"  role="button">Media <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li ><a  >Fotos</a></li>
+            <li ><a >Videos</a></li>
+             <li ><a >Musik</a></li>
+         
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div class="col-sm-3">
+  </div>
+   <div class="col-sm-6">
+    Forro Ludwigburg ist eine Kommunity, die in 2010 Gegründet wurde und Forro Ludwigburg ist eine Kommunity, die in 2010 Gegründet wurde und Forro Ludwigburg ist eine Kommunity, die in 2010 Gegründet wurde und... </div>
+   <div class="col-sm-3">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+  </div>
+   <div class="col-sm-6"><h4>About Forró</h4>
+   <p style="text-align:center"><img 
+   src="https://static.wixstatic.com/media/75fbd5_b82316f87a234c78ab12cd5bca465a74~mv2.jpg_srz_383_259_85_22_0.50_1.20_0.00_jpg_srz">
+   </p>
+    <p>Forró heißt die Musik aus dem Nordosten Brasiliens, die der Legende nach unter Einwanderern entstanden ist, als sie Ende des 19. Jahrhunderts an den Eisenbahnlinien des Landes arbeiteten. Zahlreiche europäische Einflüsse finden sich im Forró, von Polka, Klezmer bis in zur Musik der Sinti und Roma. Das tragende Instrument ist eine Sanfona, eine Handharmonika, die von einer Basstrommel „Zabumba“ und einer Triangel begleitet wird.
+Forró ist auch ein Tanzstil, der sich vom Nordosten aus in ganz Brasilien verbreitet hat. Er wird zu zweit im charakteristischen Rhythmus getanzt. Der einfache Grundschritt wurde in den 80er Jahren von Studenten aufgenommen und mit Drehfiguren verziert. Seitdem wächst stetig die Popularität des Forró, der sich nun auch in Europa verbreitet. In Paris, London und Lissabon ist Forró bereits fester Teil der Tanzszene. In Deutschland ist er in Köln, Stuttgart, Aachen und jetzt auch MÜNCHEN nicht mehr aus dem Nachtleben wegzudenken.</p>
+   <p style="text-align:center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/c33sqgUUJKg" frameborder="0" allowfullscreen></iframe> </p></div>
+   <div class="col-sm-3">
+  </div>
+</div>

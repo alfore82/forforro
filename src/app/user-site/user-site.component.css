@@ -1,0 +1,13 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.dropdown{
+  padding-left:15px;
+  padding-right:15px;
+}
